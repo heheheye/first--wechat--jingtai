@@ -1,0 +1,84 @@
+/* pages/Appin/Appin.wxss */
+.content {
+  height: 1600rpx;
+  border: none;
+
+}
+
+/* 预约详情 */
+
+
+.backindex {
+  display: flex;
+  height: 60rpx;
+
+}
+
+.backindex image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 8rpx
+}
+
+.backindex view {
+  line-height: 60rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+  font-size: 36rpx
+}
+
+.common {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+
+
+}
+
+.common view {
+
+  height: 90rpx;
+  font-size: rpx;
+  line-height: 90rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.right {
+  text-align: right;
+  width: 48%;
+  padding-right: 10rpx;
+
+}
+
+.left {
+  width: 64%;
+  padding-left: 10rpx;
+}
+
+.common1 {
+  border: 2px solid #EAF0F0
+}
+
+.add {
+  border-top: 3px solid #EAF0F0;
+  height: 200rpx
+}
+
+.add view {
+  margin-top: 100rpx;
+  width: 50%;
+  text-align: center;
+  color: white
+}
+
+.addleft {
+  background: #1E9EFF
+}
+
+.addright {
+  background: #FE5722
+}

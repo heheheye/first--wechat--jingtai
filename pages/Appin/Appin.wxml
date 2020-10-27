@@ -1,0 +1,38 @@
+<!--pages/Appin/Appin.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="content-body1">
+      <!-- 返回上一级 -->
+      <view class="backindex">
+        <navigator url="/pages/index/index" open-type="switchTab" hover-class="other-navigator-hover">
+          <image src="../../static/bottomicon/fanhui.png"></image>
+        </navigator>
+        <view>预约详情</view>
+      </view>
+    </view>
+
+    <view class="common1" wx:for="{{arraycontent}}" wx:key="index" >
+      <view class="common" style="border-top:1px solid #EAF0F0;border:{{item.border}}">
+        <view class="left">{{item.name}}</view>
+        <view class="right" style="color:{{item.color}}">
+          {{item.content}}
+        </view>
+      </view>
+      <view>
+        <view class="common" wx:for="{{item.ContacTperson}}" wx:key="index1" wx:for-item="index1" style="color:#99A5AA;border-top:1px solid #D3D9DC">
+          <view class="left">
+            {{index1.name}}
+          </view>
+          <view class="right">
+            {{index1.content}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="common add">
+      <view class="addleft"  bindtap="share">分享</view>
+      <view class="addright" bindtap="cancel">取消</view>
+    </view>
+    
+  </view>
+</view>

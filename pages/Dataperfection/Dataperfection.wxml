@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="content">
+    <!-- 页面顶部内容显示区 -->
+    <view class="content-body1">
+      <!-- 返回上一级 -->
+      <view class="backindex">
+        <navigator url="/pages/mine/mine" open-type="switchTab" hover-class="other-navigator-hover">
+          <image src="../../static/bottomicon/fanhui.png"></image>
+        </navigator>
+        <view>资料完善</view>
+      </view>
+    </view><!--  -->
+    <view class="content-body2">
+      <view wx:for="{{list}}" wx:key="index" class="cb2-body">
+        <view class="cb2-left">{{item.name}}</view>
+        <view class="cb2-right">{{item.content}}</view>
+      </view>
+    </view>
+    <button style="width:100vw;">
+      保存
+    </button>
+  </view>
+</view>

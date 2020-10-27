@@ -1,0 +1,40 @@
+<view class="container">
+  <!-- 上部加轮播图 -->
+  <view class="content-body1">
+    <view class="cb1-head">
+      <view class="cb1-head1">好租</view>
+      <view class="cb1-head2"></view>
+      <view class="cb1-head3">共享办公室</view>
+    </view>
+    <!-- swiper -->
+    <view class="page-body">
+      <view class="page-section page-section-spacing swiper">
+        <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+          indicator-color="#A5CCE8" indicator-active-color="white" duration="{{duration}}">
+          <block wx:for="{{background}}" wx:key="index">
+            <swiper-item>
+              <image src="{{item.url}}" class="swiperimage">
+              </image>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+    <view class="Sharedmeetingroom">
+      共享会议室
+    </view>
+  </view>
+  <!-- 主要内容 -->
+  <view class="content-body2">
+    <view class="cb2"
+    wx:for="{{arraybox}}" wx:key="index" bindtap="go">
+
+      <image src="{{item.url}}"></image>
+      <view class="right">
+        <view>{{item.index1}}</view>
+        <view>{{item.index2}}</view>
+        <view>{{item.index3}}</view>
+      </view>
+    </view>
+  </view>
+</view>

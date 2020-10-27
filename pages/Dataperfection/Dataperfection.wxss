@@ -1,0 +1,57 @@
+/* pages/Dataperfection/Dataperfection.wxss */
+.content {
+  height: 1600rpx;
+  border: none;
+
+}
+
+/* 预约详情 */
+
+
+.backindex {
+  display: flex;
+  height: 60rpx;
+
+}
+
+.backindex image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 8rpx
+}
+
+.backindex view {
+  line-height: 60rpx;
+  margin-left: 40rpx;
+  font-weight: bold;
+  font-size: 36rpx
+}
+.content-body2{background:#EAF0F0;border:2px solid #EAF0F0}
+.cb2-body {
+  display: flex;
+  justify-content: space-between;height:80rpx;margin-top:4rpx;line-height:80rpx;
+  font-size:30rpx;background:white
+
+}
+
+.cb2-left {
+  margin-left: 20rpx
+}
+
+.cb2-right {
+  margin-right: 20rpx
+}
+button{
+  margin-top: 720rpx;
+  background-color: #009788;
+  border-radius:0rpx;
+  color: #ffffff
+ 
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
